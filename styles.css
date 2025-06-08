@@ -1,0 +1,44 @@
+body{
+    background: orange;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;  
+
+    font-family: 'Comic Sans MS';
+    text-align: center;
+    margin-top: 100px; 
+}
+
+h1{
+    margin-top: 7vw;
+    margin-bottom: 6vw; 
+    font-size: 3vw;
+}
+
+button{
+    font-family: 'Comic Sans MS';
+    font-size: 2vw; 
+    border-radius: 1vw;
+    background-color: #6559cc;
+    color: white;
+    border: 0vw;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(218, 74, 182);
+}
+
+input{
+    font-family: 'Comic Sans MS';
+    color: black; 
+    font-size: 2vw;
+    border: 0vw;
+    width: 20vw;
+}
+
+#greeting{
+    margin-top: 5vw;
+    font-size:2vw;
+
+}
