@@ -1,16 +1,57 @@
-const nicknameSubmitter = document.getElementById('nicknameSubmitter');
-const greetingDiv = document.getElementById('greeting');
-function greetUser(){
-    const nickname = document.getElementById('nickname');
-    const userName = nickname.value.trim(); 
+function slideshow(buttonId, slideshowSelector){
+    let index = 0; 
 
-    if(userName){
-        //I want to add something in front of this that makes it wait a second before printing
-        greetingDiv.textContent = "Well well well...welcome to Aura Land, " + userName;
-        typeGreeting()
+    document.getElementById(buttonId).addEventListener("click", () => {
+        var slides = document.querySelectorAll(`${slideshowSelector} .slide`);
 
-    }else{
-        greetingDiv.textContent = "Erm...so you actually have to enter a name, yk...";
-    }
+        slides.forEach(slide => {
+            slide.classList.remove("active");
+        });
+        
+        index = (index + 1) % slides.length;
+
+        slides[index].classList.add("active");
+
+        if (buttonId === "base-button"){
+            const baseNames = ["flamingo", "panda", "tiger", "wolf", "eagle"];
+            const currentBase = baseNames[index];
+            setBaseClass(currentBase);
+        }
+  
+
+    });
 }
-nicknameSubmitter.addEventListener('click', greetUser);
+
+function setBaseClass(baseName){
+    var imageBox = document.getElementById("image-box");
+    imageBox.classList.remove("flamingo-active", "panda-active", "tiger-active", "wolf-active", "eagle-active");
+    imageBox.classList.add(`${baseName}-active`);
+
+}
+
+
+    var btn1 = document.getElementById("finished-button");
+
+    var doneSound = new Audio("Audio/wow.mp3");
+
+    doneSound.preload = "auto";
+
+    btn1.addEventListener("click", () =>{
+        doneSound.currentTime = 0;
+        doneSound.play();
+    });
+
+/* Confetti Class, imported from Library*/
+const jsConfetti = new JSConfetti();
+
+document.getElementById("finished-button").addEventListener("click", () =>{
+    jsConfetti.addConfetti();
+});
+
+slideshow("base-button", ".base-slideshow");  
+slideshow("hat-button", ".hat-slideshow"); 
+slideshow("face-button", ".face-slideshow"); 
+slideshow("clothes-button", ".clothes-slideshow-one");
+slideshow("shoes-button", ".shoes-slideshow-two");
+
+setBaseClass("flamingo");
