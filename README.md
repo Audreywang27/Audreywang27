@@ -1,6 +1,7 @@
 # AuraLand
 
 [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
 This is a funny little project I got from a wacky discussion with my friend...it's called Auraland, because my original idea was "you gain aura as you stay on the site!", so I'm sorry if that's corny or anything, looking back at it it's very goofy lol
 
 Basically my project lets you make your own brainrot character! You just toggle through the buttons, choosing what animal you want and then what accessories you want on them!
