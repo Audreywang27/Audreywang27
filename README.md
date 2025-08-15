@@ -12,5 +12,6 @@ It's meant to be annoying, so I'm sorry in advance :)...I made this because I th
 
 I struggled quite a bit with getting the formatting correct for a long time...safe to say I learned my lesson about using position:relative...I also struggled quite a bit with formatting the clothes...lowkey gave up on the flamingo, so it looks pretty goofy, but that fits the theme of my silly project :D
 Getting the background music was also a pretty big road block haha...made me crash out for like two weeks until I finally figured it out...same with getting the shoes in on the animals, since some of them have four feet and others have two...
+I also had a bit of trouble trying to get my GitHub pages running, and my friend finally got it to work, but the repo name is a bit odd...still have no clue how to fix it :(
 
 This is the result of my blood, sweat, and tears -- lowkey fought with this project for a super long time -- so please enjoy!
