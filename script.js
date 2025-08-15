@@ -29,17 +29,17 @@ function setBaseClass(baseName){
 
 }
 
-/*This is audio stuff*/
-var btn1 = document.getElementById("finished-button");
 
-var doneSound = new Audio("Audio/wow.mp3");
+    var btn1 = document.getElementById("finished-button");
 
-doneSound.preload = "auto";
+    var doneSound = new Audio("Audio/wow.mp3");
 
-btn1.addEventListener("click", () =>{
-    doneSound.currentTime = 0;
-    doneSound.play();
-});
+    doneSound.preload = "auto";
+
+    btn1.addEventListener("click", () =>{
+        doneSound.currentTime = 0;
+        doneSound.play();
+    });
 
 /* Confetti Class, imported from Library*/
 const jsConfetti = new JSConfetti();
@@ -71,7 +71,7 @@ btn2.addEventListener("click", () =>{
         btn2.textContent = "no pauses :D";
     }
 })
-/*End of audio stuff */
+
 
 slideshow("base-button", ".base-slideshow");  
 slideshow("hat-button", ".hat-slideshow"); 
@@ -81,3 +81,4 @@ slideshow("shoes-button", ".shoes-slideshow-two");
 
 setBaseClass("flamingo");
 
+/*Audio Stuff*/

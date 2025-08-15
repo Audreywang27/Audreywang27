@@ -77,6 +77,13 @@ button:hover{
     background-color: rgb(218, 74, 182);
 }
 
+/*Audio button*/
+.music-button{
+    padding: 0.5vw; 
+    position: absolute; 
+    top: 21vw;
+    left: 20%;
+}
 /*Stuff involving the slideshow (the build your character stuff)*/
 
     /*base-slideshow*/
